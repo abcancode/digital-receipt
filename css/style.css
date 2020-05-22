@@ -43,7 +43,7 @@ body{
 header {
     width: 100%;
     display: flex;
-    box-shadow: 1px 1px 5px 1px var(--clr-dark);
+    box-shadow: 1px 1px 5px 1px var(--clr-light);
     background-color: var(--clr-light);
 }
 
@@ -97,15 +97,6 @@ header .container {
     text-decoration: none;
     color: var(--clr-dark);
 }
-
-.user {
-    text-decoration: none;
-    display: inline-block;
-    padding: .5em 1.5em;
-    color: var(--clr-dark);
-}
-
-
 
 
 /* Login Section */
@@ -207,7 +198,7 @@ p {
     font-size: 15px;
     font-family: var(--ff-secondary);
     font-weight: bold;
-    box-shadow: 1px 1px 7px 1px var(--clr-dark);
+    box-shadow: 1px 1px 7px 1px var(--clr-light);
 }
 
 .btn-reg:hover {
