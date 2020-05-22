@@ -25,8 +25,14 @@
 /* General Styles */
 
 html {
-    scroll-behavior: smooth;
-}
+    background: linear-gradient(to right, rgba(87, 86, 151, 0.52), rgba(45, 43, 71, 0.60)), url(../img/bg.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   scroll-behavior: smooth;
+   color: var(--clr-light);
+ }
 
 body{
     margin: 0;
@@ -114,7 +120,7 @@ header .container {
     font-size: var(--fs-header);
     padding: 80px 0px 10px 0px; 
     text-align: center;
-    color: var(--clr-accent);
+    color: var(--clr-light);
 }
 
 .form_container {
@@ -123,7 +129,7 @@ header .container {
     height: 30em;
     margin: 1.5em auto;
     padding: 20px 40px 5px 40px;
-    box-shadow: 1px 1px 7px var(--clr-accent);    
+    box-shadow: 1px 1px 7px var(--clr-light);    
 }
 
 form {
@@ -149,7 +155,7 @@ form {
 label {
     font-family: var(--ff-primary);
     font-size: .9em;
-    
+    color: var(--clr-light);    
 }
 
 input {
@@ -158,9 +164,10 @@ input {
     padding: 15px; 
     width: 100%;
     display: inline-block;
-    background-color: #EDF2F7;
+    background: linear-gradient(to right, rgba(87, 86, 151, 0.32), rgba(45, 43, 71, 0.35));
     border: 1px solid var(--clr-light);
     margin-top: 2px;
+    border-radius: 4px;
 }  
 
 input[type=text], [type=email], [type=password] {
@@ -171,12 +178,13 @@ input[type=text], [type=email], [type=password] {
 
 ::placeholder {    
     font-family: var(--ff-secondary);
+    color: var(--clr-light);
   }
 
 h3 {    
     margin-bottom: 70px;
     font-family: var(--ff-primary);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     font-size: var(--fs-h3);
     text-align: center;
 }
@@ -213,7 +221,7 @@ p {
 
 .register {
     text-decoration: none;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     cursor: pointer;
 }
 
@@ -223,7 +231,7 @@ p {
 
 .forgot {
     text-decoration: none;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     cursor: pointer;
     margin-bottom: 50px;
 }
