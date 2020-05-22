@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Digital Receipt</title>    
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Digital Receipt</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
   </head>
   <body>
@@ -14,67 +15,94 @@
     <!-- Header Section -->
     <header>
 
-      <!-- Logo -->
-      <div class="logo">
+          <div class="container">
 
-        <a><h2>Digital Receipt</h2></a> <!--We would use this since we don't have a logo yet-->
+              <!-- Logo -->
+            <div class="brand">
 
-      </div>
+               <h2><a href="#" class="logo">Digital Receipt</a></h2> <!--We would use this since we don't have a logo yet-->
 
-      <!-- Navigation Menu (Navbar) -->
-      <nav class="navbar">
+            </div>
 
-        <ul class="nav__list">
-          <!-- Nav Items-->
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#e_receipt" class="nav__link">E-receipt</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
-            <li class="nav__item"><a href="#about" class="user">Sign Up</a></li>
-            <li class="nav__item"><a href="#about" class="user">Login</a></li>
+            <!-- Navigation Menu (Navbar) -->
+            <nav class="navbar">
 
-        </ul>
+              <ul class="nav__list">
 
-      </nav>
+                  <!-- Nav Items-->
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#e_receipt" class="nav__link">myReceipt</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+                    <li class="nav__item"><a href="register.html" class="nav__link">Sign Up</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
 
-    </header>
+              </ul>
+
+            </nav>
+
+        </div>      
+  </header>
 
     <!-- Login Form Section -->
-    <section class="container">
+    <section class="main_container">
 
       <!-- Form Title -->
       <div class="form_header">
 
+          <h1>Log into your Account</h1>
+
       </div>
 
-      <form>
 
-        <!-- Username Input -->  
-        <p>
+      <div class="form_container">
 
-            <label>Username</label><br />
-            <input type="text" name="email" placeholder="Username or email address"  />
+        <form>
 
-        </p>
-        
+          <h3>Welcome Back</h3>
 
-        <!-- Password Input-->
-        <p>
+          <!-- Username Input -->  
+          <p>
+  
+              <label>Username</label><br />
+              <input type="text" name="email" placeholder="Username or email address"  />
+  
+          </p>
+          
+  
+          <!-- Password Input-->
+          <p>
+  
+              <label>Password</label><br />
+              <input type="password" name="password" placeholder="Password"  />
+  
+          </p>       
+      
+          <!-- Login Button -->  
+          <p>
+  
+              <button class="btn-login" type="submit">Login</button>
+  
+          </p>
+  
+        </form>
 
-            <label>Password</label><br />
-            <input type="password" name="password" placeholder="Password"  />
-
-        </p>       
-    
-        <!-- Login Button -->  
-        <p>
-
-            <button class="btn-login" type="submit">LOGIN</button>
-
-        </p>
-
-      </form>
+      </div>     
 
     </section>
+
+    <section class="register_contents">
+        <p>
+
+            <a class="forgot" href="#">Forgot Password</a>
+
+        </p>
+
+        <p>
+
+            <a class="register" href="register.html">Don't have an account? Register</a>
+            
+        </p>
+      </section>
 
     <!-- Footer Section -->
     <footer>

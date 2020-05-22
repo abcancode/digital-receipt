@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Digital Receipt</title>    
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
   </head>
   <body>
 
-    <!-- Header Section -->
-    <header>
+   <!-- Header Section -->
+   <header>
 
-      <!-- Logo -->
-      <div class="logo">
+    <div class="container">
 
-        <a><h2>Digital Receipt</h2></a> <!--We would use this since we don't have a logo yet-->
+        <!-- Logo -->
+      <div class="brand">
+
+         <h2><a href="#" class="logo">Digital Receipt</a></h2> <!--We would use this since we don't have a logo yet-->
 
       </div>
 
@@ -26,33 +29,38 @@
 
         <ul class="nav__list">
 
-          <!-- Nav Items-->
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#e_receipt" class="nav__link">E-receipt</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
-            <li class="nav__item"><a href="#about" class="user">Sign Up</a></li>
-            <li class="nav__item"><a href="#about" class="user">Login</a></li>
+            <!-- Nav Items-->
+              <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#e_receipt" class="nav__link">E-receipt</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+              <li class="nav__item"><a href="register.html" class="nav__link">Sign Up</a></li>
+              <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
 
         </ul>
 
       </nav>
 
-    </header>
+  </div>      
+</header>
 
-    <!-- Login Form Section -->
-    <section class="container">
+    <!-- Register Form Section -->
+    <section class="main_container">
 
       <!-- Form Title-->
-      <div class="register_header">
+      <div class="form_header">
+
+        <h1>Create your Account</h1>
 
       </div>
 
-      <form>
+      <div class="form_container">
+      
+      <form class="form">
 
         <!-- Username Input -->  
         <p>
 
-          <label>User Name</label><br />
+          <label>Username</label><br />
           <input type="text" name="user_name" placeholder="Username"  />
 
         </p>
@@ -77,12 +85,28 @@
       <!-- Create Account Button -->  
         <p>
 
-            <button class="btn-reg" type="submit">Create Acoount</button>
+            <button class="btn-reg" type="submit">Create Account</button>
 
         </p>
 
       </form>
 
+    </div>
+
+    </section>
+
+    <section class="register_contents">
+      <p>
+
+          <a class="forgot" href="#">Forgot Password</a>
+
+      </p>
+
+      <p>
+
+          <a class="register" href="login.html">Already have an account? Login</a>
+          
+      </p>
     </section>
 
     <!-- Footer Section -->
