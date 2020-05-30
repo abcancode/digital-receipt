@@ -33,7 +33,7 @@ body{
 header {
     width: 100%;
     display: flex;
-    box-shadow: 1px 1px 5px 1px var(--clr-light);
+    box-shadow: 1px 1px 5px 1px var(--clr-dark);
     background-color: var(--clr-light);
 }
 
@@ -89,7 +89,7 @@ header .container {
 }
 
 
-/* Login Section */
+/* Register Section */
 
 .main_container {
     width: 100%;
@@ -101,17 +101,18 @@ header .container {
     font-size: var(--fs-header);
     padding: 80px 0px 10px 0px; 
     text-align: center;
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .form_container {
     border-radius: 4px;
     max-width: 48em;
-    height: 30em;
+    height: 38em;
     margin: 1.5em auto;
     padding: 20px 40px 5px 40px;
-    box-shadow: 1px 1px 7px var(--clr-light);    
+    box-shadow: 1px 1px 7px var(--clr-dark);    
 }
+
 
 form {
     margin: 0 auto;
@@ -135,8 +136,7 @@ form {
 
 label {
     font-family: var(--ff-primary);
-    font-size: .9em;
-    color: var(--clr-light);    
+    font-size: .9em;  
 }
 
 input {
@@ -145,23 +145,21 @@ input {
     padding: 15px; 
     width: 100%;
     display: inline-block;
-    background: linear-gradient(to right, rgba(87, 86, 151, 0.32), rgba(45, 43, 71, 0.35));
-    border: 1px solid var(--clr-light);
+    background: ;
+    border: 1px solid var(--clr-dark);
     margin-top: 2px;
     border-radius: 4px;
-    color: var(--clr-light);
 }  
 
 input[type=text], [type=email], [type=password] {
     margin-bottom: 20px;
     font-family: var(--ff-primary);
-    color:
 }
 
 
 ::placeholder {    
     font-family: var(--ff-secondary);
-    color: var(--clr-light);
+    color: var(--clr-accent);
   }
 
 h3 {    
@@ -178,12 +176,12 @@ p {
 }
 
 
-.btn-login {
-    
+.btn-reg {
+
     width: 40%;
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    padding: 20px 20px;
+    padding: 15px 15px;
     margin-top: 10px;
     border: none;
     border-radius: 2px;
@@ -193,8 +191,6 @@ p {
     font-weight: bold;
     box-shadow: 1px 1px 7px 1px var(--clr-light);
 }
-
-
 
 .btn-reg:hover {
     background-color: var(--clr-bg);
@@ -226,8 +222,6 @@ p {
     color: var(--clr-accent);
 }
 
-.match_msg{
-    margin: 0;
-    padding: 0;
-    font-size: .2em;
+.btn-div {
+    text-align: center;
 }

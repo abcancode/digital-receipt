@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Digital Receipt</title>    
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
     
   </head>
   <body>
@@ -60,16 +60,16 @@
         <!-- Username Input -->  
         <p>
 
-          <label>Username</label><br />
-          <input type="text" name="user_name" placeholder="Username"  />
+          <label id="username" for="username">Username</label><br />
+          <input id="username" type="text" name="user_name" placeholder="Username"  />
 
         </p>
 
         <!-- Email Address Input -->  
         <p>
 
-          <label>Email</label><br />
-          <input type="email" name="email" placeholder="Email"  />
+          <label id="email" for="email">Email</label><br />
+          <input id="email" type="email" name="email" placeholder="Email"  />
 
         </p>
 
@@ -77,10 +77,21 @@
         <!-- Password Input-->
         <p>
 
-            <label>Password</label><br />
-            <input type="password" name="password" placeholder="Password"  />
+            <label id="password" for="password">Password</label><br />
+            <input type="password" name="password" id="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="passwordCheck();" required>
 
         </p>       
+
+        
+        <!--  Confirm Password Input-->
+        <p>
+
+          <label id="confirm_password" for="confirm_password"> Confirm Password</label><br />
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="passwordCheck();" required>
+          <span id="match_msg" class="match_msg"></span>
+      </p> 
+
+      <div class="btn-div">
 
       <!-- Create Account Button -->  
         <p>
@@ -88,6 +99,8 @@
             <button class="btn-reg" type="submit">Create Account</button>
 
         </p>
+
+      </div>
 
       </form>
 
